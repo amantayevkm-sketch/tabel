@@ -1,0 +1,16 @@
+* { box-sizing: border-box; }
+html, body { margin: 0; height: 100%; background: #fff; color: #1C2433;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans", Arial, sans-serif; }
+.k { min-height: 100%; display: flex; flex-direction: column; padding: 3vmin 4vmin; }
+.k-head { display: flex; align-items: flex-start; justify-content: space-between; gap: 16px; }
+.k-company { font-size: clamp(14px, 2.2vmin, 22px); color: #5D6878; font-weight: 600; }
+.k-place { font-size: clamp(20px, 4vmin, 44px); font-weight: 700; line-height: 1.1; }
+.k-clock { font-size: clamp(32px, 9vmin, 110px); font-weight: 700; letter-spacing: -0.03em; font-variant-numeric: tabular-nums; line-height: 1; }
+.k-qr-wrap { flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 2.5vmin; }
+.k-qr { width: min(72vmin, 640px); aspect-ratio: 1; transition: opacity .25s; }
+.k-qr svg { width: 100%; height: 100%; display: block; }
+.k-qr.hide { opacity: .06; }
+.k-bar { width: min(72vmin, 640px); height: 8px; background: #E4E8EE; border-radius: 4px; overflow: hidden; }
+.k-bar span { display: block; height: 100%; background: #17784A; width: 100%; transform-origin: left; }
+.k-hint { max-width: min(86vmin, 760px); text-align: center; font-size: clamp(15px, 2.4vmin, 26px); color: #3A4556; margin: 0; }
+.k-err { position: fixed; left: 0; right: 0; bottom: 0; margin: 0; padding: 16px; background: #B42318; color: #fff; text-align: center; font-size: clamp(15px, 2.4vmin, 24px); }

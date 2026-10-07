@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="kk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#FFFFFF">
+  <meta name="robots" content="noindex">
+  <meta name="referrer" content="no-referrer">
+  <title>Табель — QR экран</title>
+  <link rel="icon" href="icons/favicon-32.png">
+  <link rel="stylesheet" href="kiosk.css">
+</head>
+<body>
+  <main class="k">
+    <header class="k-head">
+      <div><div class="k-company" id="company"></div><div class="k-place" id="place">Жүктелуде…</div></div>
+      <div class="k-clock" id="clock"></div>
+    </header>
+    <section class="k-qr-wrap">
+      <div class="k-qr hide" id="qr" aria-label="Тіркеуге арналған QR-код"></div>
+      <div class="k-bar"><span id="bar"></span></div>
+      <p class="k-hint">Табель қолданбасында «Жұмысқа келдім» немесе «Жұмыстан кеттім» батырмасын басып, осы кодты сканерлеңіз.</p>
+    </section>
+    <p class="k-err" id="err" hidden></p>
+  </main>
+  <script src="config.js"></script>
+  <script src="qr.js"></script>
+  <script src="kiosk.js"></script>
+</body>
+</html>
